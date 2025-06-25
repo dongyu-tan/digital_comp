@@ -74,5 +74,27 @@ int main()
 
 	annualCarbonFootprint = annualKWH * carbonEmissionsPerKWH;
 
+	std::cout << std::endl;
+	std::cout << "--------------------------------------------------------" << std::endl;
+	std::cout << "         📊 Your Device's Energy Footprint 📊          " << std::endl;
+	std::cout << "--------------------------------------------------------" << std::endl;
+	std::cout << std::fixed << std::setprecision(3); // Set precision for KWH/Carbon
+	std::cout << "✨ Daily energy use: " << dailyKWH << " kWh" << std::endl;
+	std::cout << "✨ Monthly energy use: " << monthlyKWH << " kWh" << std::endl;
+	std::cout << "✨ Annual energy use: " << annualKWH << " kWh" << std::endl
+						<< std::endl;
+
+	std::cout << std::fixed << std::setprecision(2); // Set precision for currency
+	std::cout << "💰 Estimated Daily Cost: $" << dailyCost << std::endl;
+	std::cout << "💰 Estimated Monthly Cost: $" << monthlyCost << std::endl;
+	std::cout << "💰 Estimated Annual Cost: $" << annualCost << std::endl
+						<< std::endl;
+
+	std::cout << std::fixed << std::setprecision(3); // Reset precision for carbon
+	std::cout << "🌳 Estimated Annual Carbon Emissions: " << annualCarbonFootprint << " kg of CO2" << std::endl;
+	std::cout << "(That's like planting " << std::fixed << std::setprecision(1) << annualCarbonFootprint / 20.0 << " small trees! 🌲)" << std::endl;
+	std::cout << "--------------------------------------------------------" << std::endl
+						<< std::endl;
+
 	return 0;
 }
