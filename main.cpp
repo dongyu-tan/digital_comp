@@ -52,7 +52,7 @@ int main() {
                                     "  (e.g., If you use it for half a day, enter 12): ");
 
     costPerKWH = getValidatedInput("What's the cost of electricity per unit (kilowatt-hour or kWh) in your area?\n"
-                                   "  (e.g., If it's $0.15 per kWh, just enter 0.15): ");
+                                   "  (e.g., If it's RM0.15 per kWh, just enter 0.15): ");
 
     carbonEmissionsPerKWH = getValidatedInput("Finally, what are the average carbon emissions for electricity in your region?\n"
                                               "  (e.g., A common value is 0.5 kg CO2 per kWh. Enter 0.5 if unsure): ");
@@ -79,9 +79,9 @@ int main() {
     std::cout << "✨ Annual energy use: " << annualKWH << " kWh" << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(2);
-    std::cout << "💰 Estimated Daily Cost: $" << dailyCost << std::endl;
-    std::cout << "💰 Estimated Monthly Cost: $" << monthlyCost << std::endl;
-    std::cout << "💰 Estimated Annual Cost: $" << annualCost << std::endl << std::endl;
+    std::cout << "💰 Estimated Daily Cost: RM" << dailyCost << std::endl;
+    std::cout << "💰 Estimated Monthly Cost: RM" << monthlyCost << std::endl;
+    std::cout << "💰 Estimated Annual Cost: RM" << annualCost << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(3);
     std::cout << "🌳 Estimated Annual Carbon Emissions: " << annualCarbonFootprint << " kg of CO2" << std::endl;
@@ -120,8 +120,8 @@ int main() {
     std::cout << "✅ Energy YOU Saved Annually: " << annualKWH - reducedAnnualKWH << " kWh" << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(2);
-    std::cout << "💸 New Annual Cost: $" << reducedAnnualCost << std::endl;
-    std::cout << "🎉 Money YOU Saved Annually: $" << annualCost - reducedAnnualCost << std::endl << std::endl;
+    std::cout << "💸 New Annual Cost: RM" << reducedAnnualCost << std::endl;
+    std::cout << "🎉 Money YOU Saved Annually: RM" << annualCost - reducedAnnualCost << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(3);
     std::cout << "🌍 New Annual Carbon Emissions: " << reducedAnnualCarbonFootprint << " kg CO2" << std::endl;
