@@ -24,10 +24,10 @@ int main() {
     double reducedAnnualCarbonFootprint;
 
     std::cout << "--------------------------------------------------------" << std::endl;
-    std::cout << "✨ Welcome to the Eco-Smart Home Helper! ✨" << std::endl;
+    std::cout << "    Welcome to the Eco-Smart Home Helper!    " << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl;
     std::cout << "Let's find out how much energy your gadgets use and " << std::endl;
-    std::cout << "how you can save money and help our planet! 🌍" << std::endl;
+    std::cout << "how you can save money and help our planet!    " << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl << std::endl;
 
     auto getValidatedInput = [](const std::string& prompt) {
@@ -71,25 +71,25 @@ int main() {
 
     std::cout << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl;
-    std::cout << "        📊 Your Device's Energy Footprint 📊           " << std::endl;
+    std::cout << "           Your Device's Energy Footprint               " << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl;
     std::cout << std::fixed << std::setprecision(3);
-    std::cout << "✨ Daily energy use: " << dailyKWH << " kWh" << std::endl;
-    std::cout << "✨ Monthly energy use: " << monthlyKWH << " kWh" << std::endl;
-    std::cout << "✨ Annual energy use: " << annualKWH << " kWh" << std::endl << std::endl;
+    std::cout << "Daily energy use: " << dailyKWH << " kWh" << std::endl;
+    std::cout << "Monthly energy use: " << monthlyKWH << " kWh" << std::endl;
+    std::cout << "Annual energy use: " << annualKWH << " kWh" << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(2);
-    std::cout << "💰 Estimated Daily Cost: RM" << dailyCost << std::endl;
-    std::cout << "💰 Estimated Monthly Cost: RM" << monthlyCost << std::endl;
-    std::cout << "💰 Estimated Annual Cost: RM" << annualCost << std::endl << std::endl;
+    std::cout << "Estimated Daily Cost: RM" << dailyCost << std::endl;
+    std::cout << "Estimated Monthly Cost: RM" << monthlyCost << std::endl;
+    std::cout << "Estimated Annual Cost: RM" << annualCost << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(3);
-    std::cout << "🌳 Estimated Annual Carbon Emissions: " << annualCarbonFootprint << " kg of CO2" << std::endl;
-    std::cout << "(That's like planting " << std::fixed << std::setprecision(1) << annualCarbonFootprint / 20.0 << " small trees! 🌲)" << std::endl;
+    std::cout << "Estimated Annual Carbon Emissions: " << annualCarbonFootprint << " kg of CO2" << std::endl;
+    std::cout << "(That's like planting " << std::fixed << std::setprecision(1) << annualCarbonFootprint / 20.0 << " small trees!)" << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl << std::endl;
 
     std::cout << "--------------------------------------------------------" << std::endl;
-    std::cout << "       💡 Smart Living: Let's Save Energy! 💡          " << std::endl;
+    std::cout << "            Smart Living: Let's Save Energy!            " << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl;
     std::cout << "Want to see how much you could save by using this device less?" << std::endl;
     std::cout << "Enter a percentage (from 0 to 100) you think you could reduce usage:\n"
@@ -116,21 +116,21 @@ int main() {
     std::cout << "  Awesome! Here's the impact of " << std::fixed << std::setprecision(0) << reductionPercentage << "% less usage!" << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl;
     std::cout << std::fixed << std::setprecision(3);
-    std::cout << "⚡ New Annual Energy Use: " << reducedAnnualKWH << " kWh" << std::endl;
-    std::cout << "✅ Energy YOU Saved Annually: " << annualKWH - reducedAnnualKWH << " kWh" << std::endl << std::endl;
+    std::cout << "New Annual Energy Use: " << reducedAnnualKWH << " kWh" << std::endl;
+    std::cout << "Energy YOU Saved Annually: " << annualKWH - reducedAnnualKWH << " kWh" << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(2);
-    std::cout << "💸 New Annual Cost: RM" << reducedAnnualCost << std::endl;
-    std::cout << "🎉 Money YOU Saved Annually: RM" << annualCost - reducedAnnualCost << std::endl << std::endl;
+    std::cout << "New Annual Cost: RM" << reducedAnnualCost << std::endl;
+    std::cout << "Money YOU Saved Annually: RM" << annualCost - reducedAnnualCost << std::endl << std::endl;
 
     std::cout << std::fixed << std::setprecision(3);
-    std::cout << "🌍 New Annual Carbon Emissions: " << reducedAnnualCarbonFootprint << " kg CO2" << std::endl;
-    std::cout << "💚 Carbon Footprint YOU Reduced Annually: " << annualCarbonFootprint - reducedAnnualCarbonFootprint << " kg CO2" << std::endl;
-    std::cout << "(Every 20kg CO2 saved is like planting one tree! 🌲)" << std::endl;
+    std::cout << "New Annual Carbon Emissions: " << reducedAnnualCarbonFootprint << " kg CO2" << std::endl;
+    std::cout << "Carbon Footprint YOU Reduced Annually: " << annualCarbonFootprint - reducedAnnualCarbonFootprint << " kg CO2" << std::endl;
+    std::cout << "(Every 20kg CO2 saved is like planting one tree! )" << std::endl;
     std::cout << "--------------------------------------------------------" << std::endl << std::endl;
 
-    std::cout << "Thank you for using the Eco-Smart Home Helper! ✨" << std::endl;
-    std::cout << "Remember: Every small change helps build a greener, smarter city! 🏙️🌳" << std::endl;
+    std::cout << "Thank you for using the Eco-Smart Home Helper!" << std::endl;
+    std::cout << "Remember: Every small change helps build a greener, smarter city!" << std::endl;
 
     return 0;
 }
